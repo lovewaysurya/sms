@@ -12,6 +12,7 @@
     <asset:stylesheet src="bootstrap.min.css"></asset:stylesheet>
     <asset:stylesheet src="sb-admin.css"></asset:stylesheet>
     <asset:stylesheet src="morris.css"></asset:stylesheet>
+    <asset:stylesheet src="font-awesome.css"></asset:stylesheet>
     <asset:stylesheet src="font-awesome.min.css"></asset:stylesheet>
     <asset:stylesheet src="mystyle.css"></asset:stylesheet>
     <asset:javascript src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></asset:javascript>
@@ -38,7 +39,7 @@
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-download"></i> <b class="caret"></b></a>
                 <ul class="dropdown-menu message-dropdown">
                     <li class="message-preview">
                         <a href="#">
@@ -158,33 +159,48 @@
                     %{--<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>--}%
                 %{--</li>--}%
                 <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Academic <i class="fa fa-fw fa-caret-down"></i></a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-download"></i> Academic <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="demo" class="collapse">
                         <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">Dropdown Item</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><i class="fa fa-fw fa-arrows-v"></i> Course Management <i class="fa fa-fw fa-caret-down"></i></a>
-                    <ul id="demo4" class="collapse">
-                        <li>
-                            <a href="#">Course</a>
-                        </li>
-                        <li>
-                            <a href="#">Batch </a>
-                        </li>
-                        <li>
-                            <a href="#">Subject</a>
-                        </li><li>
-                        <a href="#">Section </a>
-                    </li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><i class="fa fa-fw fa-arrows-v"></i> Course Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo4" class="collapse">
+                                <li>
+                                    <a href="javascript:;" data-toggle="collapse" data-target="#demo7"><i class="fa fa-fw fa-arrows-v"></i>Course</a>
+                                   <ul id="demo7" class="collapse">
+                                       <li>
+                                      <g:link controller="course" action="index">Home</g:link>
+                                       </li>
+                                       <li>
+                                           <g:link controller="course" action="create">Add Cource</g:link>
+                                       </li>
+                                   </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Batch </a>
+                                </li>
+
+                                    <a href="javascript:;" data-toggle="collapse" data-target="#demo8"><i class="fa fa-fw fa-arrows-v"></i>Subject</a>
+                                    <ul id="demo8" class="collapse">
+                                        <li>
+                                            <g:link controller="subject" action="index">Home</g:link>
+                                        </li>
+                                        <li>
+                                            <g:link controller="subject" action="create">Add Subject</g:link>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
+                                <li>
+                                <a href="#">Section </a>
+                            </li>
 
 
-                    </ul>
+                            </ul>
+                        </li>
+                                          </ul>
                 </li>
                 <li>
                     <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Student Attendance <i class="fa fa-fw fa-caret-down"></i></a>
@@ -212,18 +228,14 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                </li>
-                <li>
-                    <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </nav>
     <g:layoutBody/>
 </div>
+
+
 <asset:javascript src="jquery.js"></asset:javascript>
 <asset:javascript src="bootstrap.min.js"></asset:javascript>
 <asset:javascript src="raphael.min.js"></asset:javascript>
