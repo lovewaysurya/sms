@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <title><g:layoutTitle></g:layoutTitle></title>
     <asset:stylesheet src="bootstrap.min.css"></asset:stylesheet>
     <asset:stylesheet src="sb-admin.css"></asset:stylesheet>
     <asset:stylesheet src="morris.css"></asset:stylesheet>
@@ -17,14 +17,14 @@
     <asset:javascript src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></asset:javascript>
     <asset:javascript src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></asset:javascript>
 
-
+<g:layoutHead/>
 </head>
 
 <body>
 <div id="wrapper">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top mynavbar" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">SB Admin</a>
+            <a class="navbar-brand" href="index.html">SMS</a>
         </div>
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">
@@ -138,36 +138,80 @@
         </ul>
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav side-nav">
-                <li class="active">
+            <ul class="nav navbar-nav side-nav mysidenav">
+                <li class="">
                     <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
+                %{--<li>--}%
+                    %{--<a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>--}%
+                %{--</li>--}%
+                %{--<li>--}%
+                    %{--<a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>--}%
+                %{--</li>--}%
+                %{--<li>--}%
+                    %{--<a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>--}%
+                %{--</li>--}%
+                %{--<li>--}%
+                    %{--<a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>--}%
+                %{--</li>--}%
+                %{--<li>--}%
+                    %{--<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>--}%
+                %{--</li>--}%
                 <li>
-                    <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                </li>
-                <li>
-                    <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                </li>
-                <li>
-                    <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                </li>
-                <li>
-                    <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                </li>
-                <li>
-                    <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                </li>
-                <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Academic <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="demo" class="collapse">
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
                             <a href="#">Dropdown Item</a>
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><i class="fa fa-fw fa-arrows-v"></i> Course Management <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo4" class="collapse">
+                        <li>
+                            <a href="#">Course</a>
+                        </li>
+                        <li>
+                            <a href="#">Batch </a>
+                        </li>
+                        <li>
+                            <a href="#">Subject</a>
+                        </li><li>
+                        <a href="#">Section </a>
+                    </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Student Attendance <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo1" class="collapse">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Take Student Attendance</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Time Table <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo2" class="collapse">
+                        <li>
+                            <a href="#">Week Day</a>
+                        </li>
+                        <li>
+                            <a href="#">Class Timing</a>
+                        </li>
+                        <li>
+                            <a href="#">TimeTable</a>
+                        </li>
+                    </ul>
+                </li>
+
                 <li>
                     <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
                 </li>
