@@ -22,8 +22,8 @@ class BatchController {
     def save(Batch batchInstance) {
         print ">>>>>>>>>>>>>"
         print params
-        def batch = new Batch(batchCours:params?.batchCours, batchName:params?.batchAlias,startDate:params?.startDate,endDate:params?.endDate, academicYear:params?.academicYear)
-        batch.save(flush: true)
+       // def batch = new Batch(batchCours:params?.batchCourse, batchName:params?.batchAlias,startDate:params?.startDate,endDate:params?.endDate, academicYear:params?.academicYear)
+        batchInstance.save(failOnError: true)
         redirect(action: 'index')
     }
 

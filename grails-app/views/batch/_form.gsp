@@ -1,31 +1,38 @@
 <%@ page import="com.edu.kist.sms.Batch" %>
 <g:form controller="batch" action="save">
     <div class="form-group">
-        <label for="academicYear" class="control-label">
-            <g:textField name="academicYear" class="form-control"></g:textField>
-        </label>
-    </div>
+    <label for="batchCourse" class="control-label">Batch Course </label>
+    <g:textField name="batchCourse" class="form-control"></g:textField>
+
+</div>
+
     <div class="form-group">
-    <label for="batchName" class="control-label">
+    <label for="batchName" class="control-label">Batch Name</label>
         <g:textField name="batchName" class="form-control"></g:textField>
-    </label>
+
     </div>
     <div class="form-group">
-        <label for="batchAlias" class="control-label">
+        <label for="batchAlias" class="control-label"> Batch Alias</label>
             <g:textField name="batchAlias" class="form-control"></g:textField>
-        </label>
+
     </div>
     <div class="form-group">
-        <label for="startDate" class="control-label">
-            <g:textField name="startDate" class="form-control"></g:textField>
-        </label>
-    </div>
-    <div class="form-group">
-        <label for="endDate" class="control-label">
-            <g:textField name="endDate" class="form-control"></g:textField>
-        </label>
+        <label for="academicYear" class="control-label">Academic Year </label>
+        <g:datePicker name="academicYear" class="form-control"></g:datePicker>
+
     </div>
 
+    <div class="form-group">
+        <label for="startDate" class="control-label"> Start Date </label>
+        <g:datePicker name="startDate" class="form-control"></g:datePicker>
+
+    </div>
+    <div class="form-group">
+        <label for="endDate" class="control-label">End Date</label>
+        <g:datePicker name="endDate" class="form-control"></g:datePicker>
+
+    </div>
+<button type="submit">save</button>
 </g:form>
 
 

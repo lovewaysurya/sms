@@ -3,7 +3,7 @@ package com.edu.kist.sms
 import org.grails.databinding.BindingFormat
 
 class Batch {
-    String batchCours
+    String batchCourse
     String batchName
     String batchAlias
     @BindingFormat('dd/MM/yyyy')
